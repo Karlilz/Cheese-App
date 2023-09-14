@@ -9,8 +9,8 @@ app.use(express.urlencoded({ extended: true }))
 app.use(morgan('tiny'))
 app.use('/cheese', cheeseController)
 
-app.get('/', (req, res) => {
-    res.send("Hello world!")
-})
+// app.get('/', (req, res) => {
+//     res.send("Hello world!")
+// })
 
 app.listen(PORT,() => console.log(`Cheese-App on ${PORT}`))
