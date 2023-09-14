@@ -10,7 +10,11 @@ app.use(morgan('tiny'))
 app.use('/cheese', cheeseController)
 
 // app.get('/', (req, res) => {
-//     res.send("Hello world!")
+//     res.send('')
 // })
+
+app.get('/', (req, res) => {
+    res.redirect('/cheese');
+  });
 
 app.listen(PORT,() => console.log(`Cheese-App on ${PORT}`))
